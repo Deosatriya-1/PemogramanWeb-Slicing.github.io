@@ -59,6 +59,7 @@ body {
 .radio-select {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .radio-select label {
@@ -73,12 +74,12 @@ body {
 
 .radio-select #option2[type="radio"] {
   position: absolute;
-  margin: 17px 270px;
+  margin: 17px 20px;
   accent-color: green;
 }
 
 .radio-select label {
-  padding: 5px 50px;
+  padding: 5px 52px;
   cursor: pointer;
   border: 1px solid #666;
   border-radius: 2px;
@@ -86,6 +87,7 @@ body {
 }
 
 .radio-select input[type="radio"]:checked + label {
+  cursor: pointer;
   background-color: rgba(0, 128, 81, 0.5);
   border-color: rgba(0, 128, 81, 0.5);
 }
